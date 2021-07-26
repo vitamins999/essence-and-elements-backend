@@ -1,0 +1,47 @@
+{
+  "kind": "collectionType",
+  "collectionName": "bracelets",
+  "info": {
+    "name": "bracelet",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "itemName": {
+      "type": "string",
+      "required": true
+    },
+    "itemDescription": {
+      "type": "string",
+      "required": true
+    },
+    "itemBullets": {
+      "type": "json",
+      "required": true
+    },
+    "itemPrice": {
+      "type": "integer",
+      "default": 0,
+      "required": true,
+      "min": 0
+    },
+    "itemImagePath": {
+      "type": "string",
+      "required": true
+    },
+    "itemLinkPath": {
+      "type": "string",
+      "required": true
+    },
+    "category": {
+      "type": "string",
+      "required": true,
+      "default": "bracelets"
+    }
+  }
+}

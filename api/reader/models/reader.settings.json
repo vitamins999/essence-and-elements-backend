@@ -1,0 +1,46 @@
+{
+  "kind": "collectionType",
+  "collectionName": "readers",
+  "info": {
+    "name": "reader"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "shortDetails": {
+      "type": "string",
+      "required": true
+    },
+    "longDetails": {
+      "type": "text",
+      "required": true
+    },
+    "imagePath": {
+      "type": "string",
+      "required": true
+    },
+    "reiki": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    },
+    "tarot": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    },
+    "crystalHealing": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    }
+  }
+}

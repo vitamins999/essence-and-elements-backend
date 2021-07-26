@@ -1,0 +1,47 @@
+{
+  "kind": "collectionType",
+  "collectionName": "necklaces",
+  "info": {
+    "name": "necklace",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "itemName": {
+      "type": "string",
+      "required": true
+    },
+    "itemDescription": {
+      "type": "string",
+      "required": true
+    },
+    "itemBullets": {
+      "type": "json",
+      "required": true
+    },
+    "itemPrice": {
+      "type": "integer",
+      "required": true,
+      "default": 0,
+      "min": 0
+    },
+    "itemImagePath": {
+      "type": "string",
+      "required": true
+    },
+    "itemLinkPath": {
+      "type": "string",
+      "required": true
+    },
+    "category": {
+      "type": "string",
+      "default": "necklaces",
+      "required": true
+    }
+  }
+}
