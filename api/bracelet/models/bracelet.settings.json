@@ -40,8 +40,8 @@
     },
     "category": {
       "type": "string",
-      "required": true,
-      "default": "bracelets"
+      "default": "bracelets",
+      "required": true
     }
   }
 }
